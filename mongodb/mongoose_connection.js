@@ -13,7 +13,9 @@ var address = {
     subDistrict: String,
     dcDistrict: String,
     region: String,
-    contactNo: String
+    contactNo: String,
+    website: String,
+    openingHours: String
 }
 
 var address_schems = = new mongoose.Schema(address);
