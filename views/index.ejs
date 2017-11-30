@@ -3,17 +3,53 @@
 
 <head>
     <title>Demo</title>
-<link rel="icon" href="https://undertale.aminoapps.com/static/bower/emojify.js/images/emoji/fish.png">
+    <link rel="icon" href="https://undertale.aminoapps.com/static/bower/emojify.js/images/emoji/fish.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+
     <script src="js/frontend_app.js"></script>
 
 </head>
 
-<body>
-    <h1>Demo</h1>
+<body ng-app="parking_app">
+
+    <div class="jumbotron text-center">
+        <h1>PARKING MADE EASY</h1>
+        <p>We specialize in finding parking spaces for you</p>
+
+        <form class="form-inline"></form>
+
+        <div class="social text-center">
+
+            <a href="/login" class="btn btn-default">
+                <span class="fa fa-user"></span> Local Login</a>
+            <a href="/signup" class="btn btn-default">
+                <span class="fa fa-user"></span> Local Signup</a>
+            <a href="/auth/facebook" class="btn btn-primary">
+                <span class="fa fa-facebook"></span> Facebook</a>
+            <a href="/auth/google" class="btn btn-danger">
+                <span class="fa fa-google-plus"></span> Google+</a>
+
+            <div class="about">
+
+                <h2>About Us</h2>
+                <h4>
+                    <strong>MISSION:</strong> TO MAKE PARKING EASIER FOR YOU</h4>
+                <p>
+                    <strong>VISION:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                    qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div ng-view></div>
 
 </body>
 
