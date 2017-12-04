@@ -16,6 +16,25 @@
 
 <body ng-app="parking_app">
 
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">PARKINGPARKPARKPARK</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#locations">LOCATIONS</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <div class="jumbotron text-center">
         <h1>PARKING MADE EASY</h1>
         <p>We specialize in finding parking spaces for you</p>
@@ -48,6 +67,12 @@
             </div>
         </div>
     </div>
+
+    <input id="pac-input" class="form-control" type="text" placeholder="Where are you going?">
+    <div id="map"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqDz3GS4JZ6ZchvADuNmzZM7_fkk9EiJ0&libraries=places&callback=initMap">
+    </script>
+
 
     <div ng-view></div>
 
