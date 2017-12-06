@@ -6,6 +6,7 @@ mongoose.connect('mongodb://localhost:27500/parking', {
 });
 
 var address = {
+    name: String,
     buildingName : String,
     streetName: String,
     buildingNo: String,
@@ -15,8 +16,13 @@ var address = {
     region: String,
     contactNo: String,
     website: String,
-    openingHours: String
+    openingHours: String,
+    facilities: String,
+    paymentMethods: String,
 }
 
-var address_schems = = new mongoose.Schema(address);
+var address_schema = new mongoose.Schema(address);
 
+var ADDRESSCLASS = mongoose.model('address', address_schema);
+
+module.exports = ADDRESSCLASS; 

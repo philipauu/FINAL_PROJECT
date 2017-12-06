@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="parking_app">
+
+<head>
+    <title>FINAL</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Parking_icon.svg/1024px-Parking_icon.svg.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+
+    <script src="js/frontend_app.js"></script>
+
+</head>
+
+
+
+<body ng-controller="all_address_controller">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">PARKINGPARKPARKPARK</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">BACK TO APP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+
+        <h2>ADD AN ADDRESS</h2>
+        <form>
+            <input type="text" placeholder="name" ng-model="input_name">
+            <input type="text" placeholder="building name" ng-model="input_buildingName">
+            <input type="text" placeholder="street name" ng-model="input_streetName">
+            <input type="text" placeholder="building number" ng-model="input_buildingNo">
+            <input type="text" placeholder="floor" ng-model="input_floor">
+            <input type="text" placeholder="area" ng-model="input_subDistrict">
+            <input type="text" placeholder="district" ng-model="input_dcDistrict">
+            <input type="text" placeholder="region" ng-model="input_region">
+            <input type="text" placeholder="contact number" ng-model="input_contactNo">
+            <input type="text" placeholder="website" ng-model="input_website">
+            <input type="text" placeholder="hours" ng-model="input_openingHours">
+            <input type="text" placeholder="facilities" ng-model="input_facilities">
+            <input type="text" placeholder="payment methods" ng-model="input_paymentMethods">
+            <button class="btn btn-primary" ng-click="create()">add new address</button>
+        </form>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>_id</th>
+                    <th>name</th>
+                    <th>building name</th>
+                    <th>street name</th>
+                    <th>building number</th>
+                    <th>floor</th>
+                    <th>area</th>
+                    <th>district</th>
+                    <th>region</th>
+                    <th>contact number</th>
+                    <th>website</th>
+                    <th>hours</th>
+                    <th>facilities</th>
+                    <th>payment methods</th>
+                    <th>UPDATE</th>
+                    <th>DELETE</th>
+                </tr>
+            </thead>
+            <tbody ng-repeat="address in addresses">
+                <tr>
+                    <td>
+                        {{address._id}}
+                    </td>
+                    <td>
+                        <input type="text" ng-model="address.name">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="address.buildingName">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="address.name">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="address.name">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="address.name">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="address.name">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="address.name">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="address.name">
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
