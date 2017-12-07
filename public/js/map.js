@@ -12,7 +12,7 @@ function edit_marker_name(a, thiis) {
 
         marker.setTitle(edit_marker_name);
 
-        google.maps.event.clearListeners(maker, 'click');
+        google.maps.event.clearListeners(marker, 'click');
 
         var content = "<span class='address_name' onclick='edit_marker_name(\"" + a + "\", this)'>" + edit_marker_name + "</span>";
         var infowindow = new google.maps.InfoWindow();
