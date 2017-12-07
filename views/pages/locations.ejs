@@ -41,20 +41,9 @@
 
         <h2>ADD AN ADDRESS</h2>
         <form>
-            <input type="text" placeholder="name" ng-model="input_name">
-            <input type="text" placeholder="building name" ng-model="input_buildingName">
-            <input type="text" placeholder="street name" ng-model="input_streetName">
-            <input type="text" placeholder="building number" ng-model="input_buildingNo">
-            <input type="text" placeholder="floor" ng-model="input_floor">
-            <input type="text" placeholder="area" ng-model="input_subDistrict">
-            <input type="text" placeholder="district" ng-model="input_dcDistrict">
-            <input type="text" placeholder="region" ng-model="input_region">
-            <input type="text" placeholder="contact number" ng-model="input_contactNo">
-            <input type="text" placeholder="website" ng-model="input_website">
-            <input type="text" placeholder="hours" ng-model="input_openingHours">
-            <input type="text" placeholder="facilities" ng-model="input_facilities">
-            <input type="text" placeholder="payment methods" ng-model="input_paymentMethods">
-            <button class="btn btn-primary" ng-click="create()">add new address</button>
+            <input type="text" placeholder="New Car Park Address" ng-model="input_name">
+
+            <button class="btn btn-primary" ng-click="create()">Add New Address</button>
         </form>
 
         <table class="table">
@@ -62,17 +51,10 @@
                 <tr>
                     <th>_id</th>
                     <th>name</th>
-                    <th>building name</th>
                     <th>street name</th>
-                    <th>building number</th>
-                    <th>floor</th>
                     <th>area</th>
                     <th>district</th>
-                    <th>region</th>
-                    <th>contact number</th>
-                    <th>website</th>
                     <th>hours</th>
-                    <th>facilities</th>
                     <th>payment methods</th>
                     <th>UPDATE</th>
                     <th>DELETE</th>
