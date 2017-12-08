@@ -55,8 +55,6 @@
                     <th>street name</th>
                     <th>area</th>
                     <th>district</th>
-                    <th>hours</th>
-                    <th>payment methods</th>
                     <th>UPDATE</th>
                     <th>DELETE</th>
                 </tr>
@@ -70,13 +68,19 @@
                         <input type="text" ng-model="address.name">
                     </td>
                     <td>
-                        <input type="text" ng-model="address.floor">
+                        <input type="text" ng-model="address.streetName">
                     </td>
                     <td>
-                        <button class="btn btn-warning" ng-click="update(employee)">UPDATE</button>
+                        <input type="text" ng-model="address.area">
                     </td>
                     <td>
-                        <button class="btn btn-danger" ng-click="delete(employee)">DELETE</button>
+                        <input type="text" ng-model="address.district">
+                    </td>
+                    <td>
+                        <button class="btn btn-warning" ng-click="update(address)">UPDATE</button>
+                    </td>
+                    <td>
+                        <button class="btn btn-danger" ng-click="delete(address)">DELETE</button>
                 </tr>
 
             </tbody>
