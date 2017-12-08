@@ -50,31 +50,36 @@
         <table class="table">
             <thead>
                 <tr>
-                    <th>_id</th>
-                    <th>name</th>
-                    <th>street name</th>
-                    <th>area</th>
-                    <th>district</th>
+                    <th>Address</th>
+                    <th>District</th>
+                    <th>Number</th>
+                    <th>Website</th>
+                    <th>Facilities</th>
+                    <th>Payments</th>
                     <th>UPDATE</th>
                     <th>DELETE</th>
                 </tr>
             </thead>
             <tbody ng-repeat="address in addresses">
                 <tr>
+
                     <td>
-                        {{address._id}}
-                    </td>
-                    <td>
-                        <input type="text" ng-model="address.name">
-                    </td>
-                    <td>
-                        <input type="text" ng-model="address.streetName">
-                    </td>
-                    <td>
-                        <input type="text" ng-model="address.area">
+                        <input type="text" ng-model="address.displayAddress">
                     </td>
                     <td>
                         <input type="text" ng-model="address.district">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="address.contactNo">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="address.website">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="address.facilities">
+                    </td>
+                    <td>
+                        <input type="text" ng-model="address.paymentMethods">
                     </td>
                     <td>
                         <button class="btn btn-warning" ng-click="update(address)">UPDATE</button>

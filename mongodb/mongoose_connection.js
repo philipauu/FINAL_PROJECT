@@ -6,17 +6,10 @@ mongoose.connect('mongodb://localhost:27500/parking', {
 });
 
 var address = {
-    name: String,
-    buildingName : String,
-    streetName: String,
-    buildingNo: String,
-    floor: Number,
-    subDistrict: String,
-    dcDistrict: String,
-    region: String,
+    displayAddress: String,
+    district: String,
     contactNo: String,
     website: String,
-    openingHours: String,
     facilities: String,
     paymentMethods: String,
 }
@@ -25,4 +18,4 @@ var address_schema = new mongoose.Schema(address);
 
 var ADDRESSCLASS = mongoose.model('address', address_schema);
 
-module.exports = ADDRESSCLASS; 
+module.exports = ADDRESSCLASS;
