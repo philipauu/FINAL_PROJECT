@@ -14,6 +14,7 @@ backend_app.use(passport.session());
 backend_app.use(routes);
 
 backend_app.listen(port, listening);
+
 function listening() {
     console.log('broadcasting on localhost:' + port);
 }
